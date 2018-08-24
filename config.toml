@@ -1,0 +1,309 @@
+# Page settings
+baseurl = "https://localhost:1313"
+title = "Communl"
+languageCode = "en-us"
+theme = "hugo-elate-theme"
+
+[params]
+
+  custom_css = ["css/custom1.css", "css/custom2.css"]
+
+  # Meta
+  author = ""
+  description = ""
+  email = ""
+  # Navigation
+  [params.navigation]
+    brand = "Communl"
+    home = "Home"
+    work = "Work"
+    testimonials = "Testimonials"
+    services = "Services"
+    about = "About"
+    contact = "Contact"
+
+    # You can add custom links before or after the default links
+    # Assign a weight to define the order
+
+    # prepended links
+
+    # [[menu.prepend]]
+    # url = "http://github.com/communl"
+    # name = "Github"
+    # weight = 10
+
+    # postpended links
+    [[menu.postpend]]
+      url = "https://github.com/communl"
+      name = '<i class="icon-github"></i>'
+      weight = 10
+
+  # Hero section
+  [params.hero]
+    title = '<img height="200px" src="images/logo.png" />'
+    subtitle = 'For the <u>People</u>, By the <u>People</u>'
+
+
+  # Intro section
+  # Available icons: http://simplelineicons.com/
+  #[params.intro]
+
+  #[[params.intro.item]]
+   # title = "Plan"
+   # description = """Communl is committed to bringing client-focused Apps, Games and Services to the community at an affordable rate," 
+   # with continual support and quick response bug fixes for the ENTIRE life cycle of our products."""
+
+    #url = "#"
+    #button = "Get In Touch"
+
+   # icon = "icon-bulb"
+    #img = "img_7.jpg"
+
+  #[[params.intro.item]]
+    #title = "Develop"
+    #description = "All projects currently scheduled for development."
+    #url = "#"
+    #button = "Get In Touch"
+    #icon = "icon-wrench"
+    #img = "img_8.jpg"
+
+  #[[params.intro.item]]
+    #title = "Launch"
+    #description = "All projects that are in production."
+
+    #url = "#"
+    #button = "Get In Touch"
+    #icon = "icon-rocket"
+    #img = "img_10.jpg"
+
+  [params.intro.video]
+    enable = false
+    title = "Watch the video"
+    icon = "icon-play2"
+    url = "https://vimeo.com/channels/staffpicks/93951774"
+
+
+  # Work section
+  [params.work]
+    enable = false
+    title = "Work"
+    description = "Demos of various projects currently being worked on"
+    footertext = '** Still in progress'
+
+    [[params.work.row]]
+      img = "work_1.jpg"
+      alt = "Image2"
+      title = "SortyPuff"
+      subtitle = "A pairing and sorting app specifically designed currently only to assist with machine learning samples, but designed with scalability in mind."
+
+    [[params.work.row]]
+      img = "work_2.jpg"
+      alt = "Image2"
+      title = "MyDialogue"
+      subtitle = "TBD"
+
+    [[params.work.row]]
+      img = "work_3.jpg"
+      alt = "Image3"
+      title = "Game"
+      subtitle = "Will be a game"
+
+    # [[params.work.row]]
+    #   img = "work_4.jpg"
+    #   alt = "Image4"
+    #   title = "Project 4"
+    #   subtitle = "Design"
+
+    # [[params.work.row]]
+    #   img = "work_5.jpg"
+    #   alt = "Image5"
+    #   title = "Project 5"
+    #   subtitle = "Design"
+
+    # [[params.work.row]]
+    #   img = "work_6.jpg"
+    #   alt = "Image6"
+    #   title = "Project 6"
+    #   subtitle = "Design"
+
+  # Testimonials section
+  [params.testimonials]
+    enable = false
+    title = "Testimonials"
+    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+
+    [[params.testimonials.item]]
+      quote = "&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;"
+      person = 'Jean Doe, CEO <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span>'
+      img = "person1.jpg"
+      alt = "Person1"
+
+    [[params.testimonials.item]]
+      quote = "&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.&rdquo;"
+      person = 'John Doe, Senior UI <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span>'
+      img = "person2.jpg"
+      alt = "Person2"
+
+    [[params.testimonials.item]]
+      quote = "&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. &rdquo;"
+      person = 'Chris Nash, Director <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span>'
+      img = "person3.jpg"
+      alt = "Person3"
+
+
+
+  # Services section
+  [params.services]
+    enable = false
+
+    title = "Services"
+    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+
+    [[params.services.item]]
+      title = "Brand &amp; Strategy"
+      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
+      icon = "icon-anchor"
+
+    [[params.services.item]]
+      title = "Web &amp; Interface"
+      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
+      icon = "icon-layers2"
+    [[params.services.item]]
+      title = "Photo &amp; Video"
+      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
+      icon = "icon-video2"
+
+      [[params.services.item]]
+      title = "CMS &amp; eCommerce"
+      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
+      icon = "icon-monitor"
+
+  # About section
+  [params.about]
+    enable = true
+    title = "About"
+    description = "The Communl Team is a group like-minded peers, <b>unified</b> under the single goal of redefining the meaning of <b>community</b>."
+
+    [[params.about.item]]
+      name = "Joe Morgan"
+      position = "Lead Creative, Founder"
+      description = """The main driving force behind the creation of the company, Joe Morgan's goal was to bring together a team of intelligent and versatile
+      techs."""
+      img = "J_morgan.jpg"
+      alt = "Joe Morgan"
+      social = [
+        ["fab fa-github", "https://github.com/remobit1/"]
+      ]
+
+    [[params.about.item]]
+      name = "Mike Crinite"
+      position = "Lead Developer"
+      description = "Mike is the one and only creator of the beloved Wednesday-Bot, known far and wide for its meme capabilities. He finally graduated from Rowan University in 2017."
+      img = "mcrinite.jpg"
+      alt = "Mike Crinite"
+      social = [
+        ["fab fa-twitter", "https://twitter.com/mikerinite"],
+        ["fab fa-github", "https://github.com/mikecrinite"],
+        ["fab fa-linkedin", "https://www.linkedin.com/in/michael-crinite-98ba6b132/"],
+        ["fab fa-instagram", "https://www.instagram.com/mikecrinite/"]
+      ]
+
+    [[params.about.item]]
+      name = "Kevin Law"
+      position = "Developer"
+      description = "Jack-of-all-trades, master of none. Moonlights as a miner on the Ethereum blockchain."
+      img = "klaw.jpg"
+      alt = "Kevin Law"
+      social = [
+        ["fab fa-twitter", "https://twitter.com/thatarchguy"],
+        ["fab fa-github", "https://github.com/thatarchguy"],
+        ["fas fa-key", "https://keybase.io/thatarchguy"]
+      ]
+
+    [[params.about.item]]
+      name = ""
+      position = "skip_this_block"
+      description = ""
+      img = ""
+      alt = ""
+      social = [
+      ]
+
+    [[params.about.item]]
+      name = "Andrew Genova"
+      position = "Developer"
+      description = "Andrew was the catalyst to make this project a reality. Originally a Java developer, he switched over to Golang and hasn't looked back."
+      img = "agenova.jpg"
+      alt = "Andrew Genova"
+      social = [
+        ["fab fa-github", "https://github.com/genovaandrew"]
+      ]
+
+  # Counters section
+  [params.counters]
+    enable = false
+    title = "Stats"
+    background = "full_image_1.jpg"
+
+    [[params.counters.item]]
+      description = "Projects in Flight"
+      icon = "icon-briefcase"
+      from = 0
+      to = 9
+      interval = 4
+      speed = 2000
+
+    [[params.counters.item]]
+      description = "Pull Requests Merged"
+      icon = "icon-code"
+      from = 0
+      to = 32
+      interval = 50
+      speed = 2000
+
+    [[params.counters.item]]
+      description = "Cups of Tea"
+      icon = "icon-cup"
+      from = 0
+      to = 132
+      interval = 10
+      speed = 2000
+
+    [[params.counters.item]]
+      description = "Meetings Joe attended"
+      icon = "icon-people"
+      from = 0
+      to = 0
+      interval = 0
+      speed = 2000
+
+  # Contact section
+  [params.contact]
+    enable = true
+    map = false
+    form = false
+    title = "Get in touch"
+    description = "If you need to get in touch with Communl, email hello@communl.io"
+
+    # Available icons: http://simplelineicons.com/
+    details = [
+        ["icon-home", "Philly, PA"],
+        ["icon-envelope", "hello@communl.io"],
+        ["icon-globe", '<a href="http://freehtml5.co/" target="_blank">communal.io</a>']
+      ]
+
+    name = "Name"
+    email = "Email"
+    phone = "Phone"
+    message = "Message"
+    button = "Send message"
+
+  # Footer section
+  [params.footer]
+    enable = true
+    copyright = '&copy; Communl. All Rights Reserved.'
+    links = [
+        ["fab fa-twitter", "https://twitter.com/communl_io"],
+        ["fab fa-github", "https://github.com/communl"],
+        ["fab fa-gitlab", "https://gitlab.com/communl"],
+      ]
